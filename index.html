@@ -4,20 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>우리함께가요 사회적협동조합</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { font-family: 'Arial', sans-serif; margin: 0; background: #f8f9fa; color: #333; }
+    header { background-color: #009688; padding: 20px; color: white; text-align: center; }
+    nav { background-color: #00695c; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav a { padding: 15px 20px; color: white; text-decoration: none; }
+    nav a:hover { background-color: #004d40; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    .hero { background-image: url('https://source.unsplash.com/featured/?care,community'); background-size: cover; background-position: center; color: white; padding: 100px 20px; text-align: center; }
+    .hero h1 { font-size: 3em; }
+    .button { background-color: #009688; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    ul { list-style-type: disc; margin-left: 20px; }
+    img { max-width: 100%; height: auto; }
+  </style>
 </head>
 <body>
   <header>
-    <img src="images/wooricoopslogo.png" alt="우리함께가요 로고" style="max-height: 80px;" />
     <h1>우리함께가요 사회적협동조합</h1>
     <p>모두가 함께 걸어가는 따뜻한 동행</p>
   </header>
 
   <nav>
     <a href="#about">조합 소개</a>
+    <a href="#purpose">설립 취지</a>
+    <a href="#history">연혁</a>
+    <a href="#greeting">대표 인사말</a>
+    <a href="#orgchart">조직도</a>
     <a href="#business">사업 소개</a>
     <a href="#gallery">갤러리</a>
-    <a href="#notice">공지사항</a>
     <a href="#donation">후원/참여</a>
     <a href="#contact">연락하기</a>
   </nav>
@@ -30,49 +45,92 @@
 
   <section id="about">
     <h2>조합 소개</h2>
-    <p>우리함께가요 사회적협동조합은 아동, 여성, 장애인, 노인 등 돌봄이 필요한 이웃들과 함께하며, 
-    일상생활 지원, 장애인활동지원, 교육, 상담, 사회서비스를 실천하는 비영리 협동조합입니다.</p>
+    <p>우리함께가요 사회적협동조합은 아동, 여성, 장애인, 노인 등 돌봄이 필요한 이웃들과 함께하며, 일상생활 지원, 장애인활동지원, 교육, 상담, 사회서비스를 실천하는 비영리 협동조합입니다.</p>
+  </section>
+
+  <section id="purpose">
+    <h2>설립 취지</h2>
+    <p>우리함께가요 사회적협동조합은 돌봄 대상자들이 지역사회 안에서 ‘자립하는 삶’을 살아갈 수 있도록 일상생활을 밀착 지원하며, 돌봄 가족들도 행복한 일상을 영위할 수 있도록 돕고자 설립되었습니다.</p>
+  </section>
+
+  <section id="history">
+    <h2>연혁</h2>
+    <ul>
+      <li><strong>2013.04.18 ~ 2018.04.30</strong> - 다정한재가센터 운영</li>
+      <li><strong>2013.11.01 ~ 2018.04.30</strong> - 효사랑복지요양원3 근무</li>
+      <li><strong>2018.05.01 ~ 2024.03.03</strong> - (A)기쁨의노인복지센터 운영</li>
+      <li><strong>2024.03.04</strong> - 우리함께가요 사회적협동조합 설립</li>
+      <li><strong>2024년</strong> - 경기도사회적경제원 성장패키지 최우수기업 선정</li>
+      <li><strong>2024년</strong> - 카카오같이가치 ‘어르신! 바다 내음 콧바람 쐬기’ 사업 수행</li>
+    </ul>
+  </section>
+
+  <section id="greeting">
+    <h2>대표 인사말</h2>
+    <p>안녕하세요. 우리함께가요 사회적협동조합 대표 ○○○입니다.<br/>저는 재가·시설 돌봄 운영, 사회복지 실습지도, 강의 등을 통해 지역사회 돌봄 발전을 위해 활동해왔습니다.<br/><br/>앞으로도 돌봄의 공공성과 전문성을 갖춘 협동조합으로서 소외 없는 복지 실현에 앞장서겠습니다.</p>
+    <p style="text-align:right;">대표 ○○○ 드림</p>
+  </section>
+
+  <section id="orgchart">
+    <h2>조직도</h2>
+    <div style="text-align:center;">
+      <img src="orgchart.png" alt="우리함께가요 조직도" />
+    </div>
+    <h3>조직 설명</h3>
+    <ul>
+      <li>조합원 총회 → 최고 의결기구</li>
+      <li>이사회, 감사 → 조합 운영 감독 및 의사결정</li>
+      <li>이사장, 사무국 → 운영 총괄</li>
+      <li>사업·교육·조사연구 위원회 → 전략적 기획</li>
+      <li>주요사업: 위탁시설운영 / 돌봄 / 교육</li>
+    </ul>
   </section>
 
   <section id="business">
     <h2>사업 소개</h2>
     <ul>
-      <li>장기요양사업-노인주간보호/방문요양/방문목욕</li>
       <li>장애인활동지원사 교육 및 파견</li>
-      <li>일상생활 동행서비스사업</li>
-      <li>장애인 직업재활시설 및 교육사업</li>
-      <li>취약계층아동등 돌봄 및 교육사업</li>
+      <li>일상생활 동행 서비스</li>
+      <li>단기/주간 보호 서비스 운영</li>
       <li>지역사회 연계 돌봄 프로그램</li>
     </ul>
   </section>
 
   <section id="gallery">
     <h2>활동 갤러리</h2>
-    <div class="gallery-images">
-      <img src="merry1.jpg" alt="활동사진1" />
-      <img src="merry2.jpg" alt="활동사진2" />
-      <img src="merry3.jpg" alt="활동사진3" />
-    </div>
+    <p>📸 활동 사진은 여기 삽입 예정</p>
   </section>
 
-  <section id="notice">
-  <h2>📢 공지사항</h2>
-  <p>우리함께가요 사회적협동조합의 최신 소식은 블로그에서 확인하세요.</p>
-  <a href="https://blog.naver.com/symplay1" class="button" target="_blank">블로그 공지사항 보기</a>
-  </section>
- 
   <section id="donation">
     <h2>후원 및 참여</h2>
     <p>여러분의 참여와 후원이 우리 지역을 더 따뜻하게 만듭니다.</p>
     <a class="button" href="#contact">문의하기</a>
   </section>
 
-  <section id="contact">
+   <section id="contact">
     <h2>연락하기</h2>
     <p>📞 전화: 031-416-1179, 팩스: 031-409-5059<br/>
        📧 이메일: merry1179@naver.com<br/>
        📍 주소: 경기도 안산시 상록구 광덕1로 385, 201호</p>
   </section>
+
+  <section id="banners" style="text-align:center; padding: 20px;">
+    <a href="https://www.acrc.go.kr/" target="_blank">
+      <img src="https://www.acrc.go.kr/images/acrc/logo.png" alt="국민권익위원회" style="height:50px; margin:10px;" />
+    </a>
+    <a href="https://www.nts.go.kr/" target="_blank">
+      <img src="https://www.nts.go.kr/images/ko/main/logo.png" alt="국세청" style="height:50px; margin:10px;" />
+    </a>
+    <a href="https://www.gotogether.co.kr/" target="_blank">
+      <img src="https://via.placeholder.com/120x50?text=GoTogether" alt="일상생활동행서비스" style="height:50px; margin:10px;" />
+    </a>
+  </section>
+
+  <footer>
+    © 2025 우리함께가요 사회적협동조합 | 모두의 동행을 응원합니다.
+  </footer>
+</body>
+</html>
 
   <footer>
     © 2025 우리함께가요 사회적협동조합 | 모두의 동행을 응원합니다.
