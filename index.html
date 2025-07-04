@@ -118,8 +118,8 @@
   </section>
 
   <section id="gallery">
-   <h2>활동 갤러리</h2>
-   <div class="gallery-images">
+  <h2>활동 갤러리</h2>
+  <div class="gallery-images">
     <img src="merry1.jpg" alt="활동 사진 1" />
     <img src="merry2.jpg" alt="활동 사진 2" />
     <img src="merry3.jpg" alt="활동 사진 3" />
@@ -128,7 +128,25 @@
   </div>
 </section>
 
-   <section id="donation">
+<style>
+  .gallery-images {
+    display: flex;
+    flex-wrap: wrap;              /* 줄바꿈 허용 (작은 화면 대응) */
+    justify-content: center;      /* 가운데 정렬 */
+    gap: 15px;                    /* 사진 사이 간격 */
+    margin-top: 20px;
+  }
+
+  .gallery-images img {
+    width: 180px;                 /* 사진 가로 크기 */
+    height: 120px;                /* 사진 세로 크기 */
+    object-fit: cover;            /* 사진 비율 유지하며 채우기 */
+    border-radius: 8px;           /* 모서리 둥글게 */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  }
+</style>
+
+    <section id="donation">
     <h2>후원 및 참여</h2>
     <p>여러분의 참여와 후원이 우리 지역을 더 따뜻하게 만듭니다.</p>
     <a class="button" href="#contact">문의하기</a>
