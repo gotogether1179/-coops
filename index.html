@@ -171,12 +171,61 @@
   }
 </style>
 
-   <section id="donation">
+  <section id="donation">
   <h2>후원 및 참여</h2>
   <p>여러분의 참여와 후원이 우리 지역을 더 따뜻하게 만듭니다.</p>
-  <a class="button" href="tel:0314161179">문의하기</a>
-  </section>
+  
+  <a class="button" href="tel:0314161179" id="callBtn">문의하기</a>
 
+  <!-- 로딩 애니메이션 숨김 상태로 준비 -->
+  <div id="loading" style="display:none; margin-top:10px; font-weight:bold; color:#007bff;">
+    전화 연결 중<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+  </div>
+</section>
+
+<style>
+  /* 점 3개가 순서대로 깜빡이는 애니메이션 */
+  .dot {
+    animation-name: blink;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0.2;
+    font-size: 20px;
+  }
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .dot:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .dot:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  @keyframes blink {
+    0% {opacity: 0.2;}
+    20% {opacity: 1;}
+    100% {opacity: 0.2;}
+  }
+</style>
+
+<script>
+  const callBtn = document.getElementById('callBtn');
+  const loading = document.getElementById('loading');
+
+  callBtn.addEventListener('click', function() {
+    // 버튼 비활성화 및 텍스트 변경
+    callBtn.style.pointerEvents = 'none';
+    callBtn.style.opacity = '0.6';
+
+    // 로딩 애니메이션 표시
+    loading.style.display = 'inline-block';
+  });
+</script>
+
+
+
+    
   <section id="contact">
     <h2>연락하기</h2>
     <p>📞 전화: 031-416-1179, 팩스: 031-409-5059<br/>
